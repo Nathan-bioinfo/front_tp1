@@ -1,5 +1,6 @@
 body{
     background-color:lightcyan;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 #main_div{
     display: flex;
@@ -15,20 +16,24 @@ body{
 .left_div{
     width: 50%;
 }
-#tree_img {
+#big_img {
     width: 100%;
 }
 .right_div{
-    width: 50%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 40%;
     font-style: italic;
     font-size: 25px;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 button{
-    font-size: 20px;
-    color: white;
+    font-size: 30px;
+    padding: 2%;
+    font-style: bold;
+    background-color: #11ffee00;
+    border: 1%;
 }
 .big_hr {
     width: 40%;
@@ -37,7 +42,6 @@ button{
 }
 h1{
     font-style: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h2 {
     display: flex;
@@ -54,4 +58,26 @@ h2:before {
 }
 h2:after {
     margin-left: 30px
+}
+@media screen and (max-width: 900px) {
+    #main_div{
+        display: flex;
+        flex-direction:column;
+        width:100%;
+        align-items: stretch;
+        align-content: center;
+        background-color:white;
+        margin: 0;
+    }
+    .left_div{
+        width: 100%;
+        margin: 0;
+    }
+    .right_div{
+        margin: 0;
+        width: 70%;
+        font-style: italic;
+        font-size: 25px;
+        text-align: center;
+    }
 }
